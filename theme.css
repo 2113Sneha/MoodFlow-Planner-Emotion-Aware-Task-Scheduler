@@ -1,0 +1,182 @@
+/* ============================
+   GLOBAL RESET + BASE STYLING
+   ============================ */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Inter:wght@300;400;500;600&display=swap');
+
+html, body {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Remove Streamlit default top padding */
+.block-container {
+    padding-top: 1rem !important;
+}
+
+/* ============================
+   HERO SECTION
+   ============================ */
+.hero-container {
+    background: linear-gradient(135deg, #6C63FF, #FF6584);
+    padding: 3rem 2rem;
+    border-radius: 18px;
+    text-align: center;
+    color: white;
+    margin-bottom: 2rem;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.hero-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 3rem;
+    margin-bottom: 0.3rem;
+}
+
+.hero-subtitle {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+/* ============================
+   MOOD TAG BADGE
+   ============================ */
+.mood-tag {
+    display: inline-block;
+    padding: 8px 15px;
+    border-radius: 25px;
+    font-size: 1.1rem;
+    color: #fff;
+    font-weight: 600;
+    margin-top: 10px;
+    box-shadow: 0px 3px 10px rgba(0,0,0,0.2);
+}
+
+/* ============================
+   TASK CARDS
+   ============================ */
+.task-card {
+    background: white;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    border-radius: 14px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.07);
+    transition: all 0.2s ease-in-out;
+}
+
+.task-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+}
+
+.task-card h3 {
+    margin: 0;
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+}
+
+.task-card p {
+    margin: 5px 0;
+    color: #666;
+}
+
+/* ============================
+   TIMELINE CARDS (Daily Plan)
+   ============================ */
+.timeline-card {
+    background: #fdfdfd;
+    border-left: 6px solid #6C63FF;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+}
+
+.timeline-card h3 {
+    margin-top: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.timeline-card p {
+    margin: 5px 0;
+    color: #444;
+    font-size: 0.95rem;
+}
+
+/* ============================
+   BUTTON STYLING
+   ============================ */
+.stButton>button {
+    background: linear-gradient(135deg, #6C63FF, #FF6584);
+    color: white;
+    padding: 0.7rem 1.2rem;
+    border-radius: 12px;
+    border: none;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.25s ease;
+}
+
+.stButton>button:hover {
+    background: linear-gradient(135deg, #5A55E4, #FF4F73);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+/* ============================
+   SIDEBAR IMPROVEMENTS
+   ============================ */
+.sidebar .sidebar-content {
+    background-color: #f7f7fb !important;
+}
+
+.css-1d391kg {
+    background-color: #f7f7fb !important;
+}
+
+.sidebar-title {
+    font-family: 'Poppins';
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+/* Style the radio buttons */
+.stRadio > div {
+    gap: 0.5rem;
+}
+
+.stRadio label {
+    font-size: 1rem;
+}
+
+/* ============================
+   HEADERS
+   ============================ */
+h1, h2, h3, h4 {
+    font-family: 'Poppins', sans-serif !important;
+}
+
+/* ============================
+   TABLE IMPROVEMENTS
+   ============================ */
+table {
+    border-radius: 10px !important;
+    overflow: hidden !important;
+}
+
+/* ============================
+   RESPONSIVE DESIGN
+   ============================ */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+
+    .task-card, .timeline-card {
+        padding: 1rem;
+    }
+}
